@@ -1,0 +1,6 @@
+sklearn
+tensorflow==1.5.0
+pickle
+csv
+mne
+re
