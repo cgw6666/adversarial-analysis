@@ -1,5 +1,11 @@
 # README for Evaluating This Model
-1. Specification of dependencies
+1. Steps for Preprocessing Data
+* Download 14 edf patient data.
+* Create a list of directories in txt.
+* Include 14 edf directory txt path in half_half_advanced_manual_preprocess.py.
+* run the following command in your terminal
+	* python half_half_advanced_manual_preprocess.py
+2. Specification of dependencies
 * requirements.txt is included for installing dependencies
 * environment.yml is provided for activating Anacaonda environments.
 To install dependencies, please perform the following steps:
@@ -11,7 +17,7 @@ To install dependencies, please perform the following steps:
    * conda activate env1
    * pip install sklearn
    * pip install tensorflow==1.5.0
-2. Training code
+3. Training code
 Running Training Code
 * In your Terminal, please enter python author_main_v1.py
 Hyperparameters
