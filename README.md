@@ -1,4 +1,4 @@
-README for Evaluating This Model
+# README for Evaluating This Model
 1. Specification of dependencies
 * requirements.txt is included for installing dependencies
 * environment.yml is provided for activating Anacaonda environments.
@@ -22,6 +22,6 @@ Hyperparameters
 * Running Evaluation Code
 * Evaluation is also done in the same file. In your Terminal, please enter python author_main_v1.py. Your results, including test accuracy rate and training accuracy rate, will be stored in ./results and ./result.csv.
 
-Reference
-* The author's original code is available here: https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml
-* The dataset can be accessed here via request: https://github.com/xiangzhang1015/adversarial_seizure_detection
+3. Reference
+* The author's original code is available [here](https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml)
+* The dataset can be accessed [here via request](https://github.com/xiangzhang1015/adversarial_seizure_detection)
