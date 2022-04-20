@@ -8,7 +8,14 @@
 - run the following command in your terminal
   - python half_half_advanced_manual_preprocess.py
 
-2. Specification of dependencies
+2. Data Download Instruction
+
+- To download EEG data, please request access from [Temple University EEG Corpus](https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml)
+- After obtaining access to Temple University EEG Corpus, find and download the list of seizure-present data as a txt file.
+- Run this command to download all the data
+  - rsync -auxvL --files-from=./EEG_files_with_seizures_list.txt REQUESTED_USERNAME@www.isip.piconepress.com:data/eeg /YOUR_LOCAL_DIRECTORY 
+
+3. Specification of dependencies
 
 - requirements.txt is included for installing dependencies
 - environment.yml is provided for activating Anacaonda environments.
@@ -22,7 +29,7 @@
   - pip install sklearn
   - pip install tensorflow==1.5.0
 
-3. Training code
+4. Training code
    Running Training Code
 
 - In your Terminal, please enter python author_main_v1.py
@@ -34,7 +41,7 @@
 - Running Evaluation Code
 - Evaluation is also done in the same file. In your Terminal, please enter python author_main_v1.py. Your results, including test accuracy rate and training accuracy rate, will be stored in ./results and ./result.csv.
 
-4. Table of results
+5. Table of results
    | Model Hyperparameter Description | Average Training Accuracy | Average Testing Accuracy | Average Testing AE Cost | Average Diagnosis Model Testing Cross Entropy | Total Training Cost | Training AE Cost | Person Detection Cross Entropy | Diagnosis Model Cross Entropy |
    |------------------------------------------------------------------------------|---------------------------|--------------------------|--------------------------|------------------------------------------------|---------------------|------------------|--------------------------------|--------------------------------|
    | Our Own Data with Original Hyperparameters | 0.5021157659 | 0.4965775578 | 0.2387831375 | 6.972470323 | 12.84448104 | 0.2408124713 | 6.951138047 | 2.565816404 |
@@ -47,7 +54,7 @@
    | decay=0.7 | 0.5017236702 | 0.4967736264 | 0.2928191495 | 6.96737065 | 12.89364802 | 0.2910375515 | 6.942397582 | 2.580484584 |
    | Random Seizure Interval Composition (Our Own Dataset, failed at 8th Subject) | 0.5319346195 | 0.528475 | 0.0559582993 | 11.4685816 | 4.93997344 | 0.07415821718 | 3.285945508 | 0.1159703172 |
 
-5. Dependencies
+6. Dependencies
 
 - ca-certificates=2022.3.29=hecd8cb5_0
 - certifi=2020.6.20=pyhd3eb1b0_3
@@ -85,7 +92,7 @@
   - werkzeug==1.0.1
   - zipp==1.2.0
 
-5. Reference
+7. Reference
 
-- The author's original code is available [here](https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml)
-- The dataset can be accessed [here via request](https://github.com/xiangzhang1015/adversarial_seizure_detection)
+- The EEG dataset can be accessed [here via request](https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml)
+- The author's original code is available [here](https://github.com/xiangzhang1015/adversarial_seizure_detection)
