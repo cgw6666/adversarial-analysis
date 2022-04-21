@@ -96,3 +96,4 @@
 
 - The EEG dataset can be accessed [here via request](https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml)
 - The author's original code is available [here](https://github.com/xiangzhang1015/adversarial_seizure_detection)
+- The author's paper is available [here](https://arxiv.org/abs/1909.10868)
