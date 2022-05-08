@@ -333,14 +333,14 @@ for P_ID in range(14):  # n_person_++1
 
     start=time.clock()
     step = 1
-    while step < 2:  # 251 iterations
+    while step < 51:  # 251 iterations
         print('iteration step', step)
         for i in range(n_group):
             feed = {xs: train_fea[i], ys_t: train_label_t[i], ys_p: train_label_p[i], keep_prob:keep}
             sess.run(train_step_task, feed_dict=feed)
             sess.run(train_step_t, feed_dict=feed)
 
-        if step == 1:
+        if step % 10 == 0:
             """training cost"""
             cost_, cost_AE_, cross_entropy_p_, cross_entropy_t_=sess.run([cost, cost_AE, cross_entropy_p, cross_entropy_t],
                                                                          feed_dict={xs: train_fea[0],
